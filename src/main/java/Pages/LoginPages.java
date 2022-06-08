@@ -25,8 +25,13 @@ public class LoginPages extends BasePages {
     @FindBy(xpath = "//input[@value='Login']")
     WebElement loginbutton;
 
-//metode:
+    @FindBy(xpath = "//span[text()='Petrovic Milos']")
+    WebElement actualNameOfMember;
 
+    @FindBy(xpath = "//span[text()='Prijava']")
+    WebElement prijavaField;
+
+    //metode:
     public void enterEmailField(String email){
         emailField.click();
         emailField.sendKeys(email);
@@ -42,7 +47,13 @@ public class LoginPages extends BasePages {
     }
 
 
+    public String getText(){
+        return actualNameOfMember.getText();
+    }
 
+    public String prijava(){
+        return prijavaField.getText();
+    }
 
 
 

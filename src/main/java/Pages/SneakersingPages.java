@@ -15,7 +15,7 @@ public class SneakersingPages extends BasePages {
     }
     //lokatori:
     @FindBy(xpath = "//h4[text()='LFS PATIKE LOGO GALTER 5']")
-    WebElement Sneakersing;
+    WebElement Sneakers;
 
     @FindBy(xpath = "//a[@id='ctl06_ctl02_RepeaterRaster_ctl01_aRaster']")
     WebElement size41;
@@ -28,8 +28,8 @@ public class SneakersingPages extends BasePages {
         shopingCartButton.click();
     }
 
-    public void clickSneakersing(){
-        Sneakersing.click();
+    public void clickSneakers(){
+        Sneakers.click();
     }
 
     public void clickSize(){

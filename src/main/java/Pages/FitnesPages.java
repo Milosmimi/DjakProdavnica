@@ -23,12 +23,12 @@ public class FitnesPages extends BasePages{
  @FindBy(xpath ="//p[text()='011083-7043']")
     WebElement blueShorts;
     //Metode:
-
+/*
  public void sortProgramBytext(String text){
      Select dropDown=new Select(programField);
      dropDown.selectByVisibleText(text);
-     clickFieldMuski();
- }
+     clickFieldMuski();*/
+
 
  public void clickFieldMuski(){
      fieldMuski.click();

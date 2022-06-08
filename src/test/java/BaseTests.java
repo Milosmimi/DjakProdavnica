@@ -1,5 +1,5 @@
 import Pages.BasePages;
-import Pages.InventoriPages;
+import Pages.InventoryPages;
 import Pages.LoginPages;
 import Pages.Strings;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,9 +26,9 @@ public class BaseTests {
 
     public void login(ChromeDriver driver){
         LoginPages loginPages=new LoginPages(driver);
-        InventoriPages inventoriPages=new InventoriPages(driver);
-        inventoriPages.clickCookies();
-        inventoriPages.clickCookeis1();
+        InventoryPages inventoryPages=new InventoryPages(driver);
+        inventoryPages.clickCookies();
+        inventoryPages.clickCookeis1();
         BasePages basePages=new BasePages(driver);
         basePages.login();
         loginPages.enterEmailField(Strings.Valid_Email);
@@ -36,6 +36,5 @@ public class BaseTests {
         loginPages.clickLoginButton();
 
     }
-
 
 }
